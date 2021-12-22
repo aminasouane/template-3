@@ -103,10 +103,10 @@ h2::after {
   content: "";
   width: 100%;
   height: 30px;
-  top : 0;
+  top: 0;
   left: 0;
   background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%),
-                    linear-gradient(225deg, #ffffff 25%, transparent 25%);
+    linear-gradient(225deg, #ffffff 25%, transparent 25%);
   background-size: 30px 30px;
 }
 /*end global rules ********************************************************************************************/
@@ -1400,7 +1400,6 @@ h2::after {
   background-image: url(../imgs/discount-background1.jpg);
   background-size: cover;
   z-index: -1;
-  padding: 0 80px;
   text-align: center;
   color: #ffffff;
   animation: change-background 10s linear infinite;
@@ -1490,10 +1489,11 @@ h2::after {
 .footer .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 20px;
+  justify-content: space-between;
 }
 .footer .container > * {
-  flex: 1 1 25%;
+  flex: 1 1 23%;
   min-width: 250px;
 }
 .footer .container .social h1 {
@@ -1513,7 +1513,7 @@ h2::after {
   transition: var(--main-transition);
 }
 .footer .container .social .fa-facebook-f:hover {
- background-color : #1877f2
+  background-color: #1877f2;
 }
 .footer .container .social .fa-twitter:hover {
   background-color: #1da1f2;
@@ -1549,10 +1549,10 @@ h2::after {
   top: 50%;
   transform: translateY(-50%);
   left: -20px;
-  color :var(--main-color)
+  color: var(--main-color);
 }
 .footer .container .links li:hover {
-  color : #ffffff;
+  color: #ffffff;
   transform: translateX(10px);
 }
 .footer .container .links li:not(:nth-last-of-type(1)) {
@@ -1579,21 +1579,20 @@ h2::after {
   width: 80px;
   border: solid 3px #ffffff;
 }
-.footer  > p {
+.footer > p {
   margin: auto;
   text-align: center;
   margin-bottom: 0;
   font-size: 16px;
   letter-spacing: -1px;
-  color : #FFFFDA;
+  color: #ffffda;
   text-transform: capitalize;
   border-top: solid 1px #444444;
-  padding: 25px ;
+  padding: 25px 0;
 }
 @media (max-width: 767px) {
   .footer .container > * {
     text-align: center;
- 
   }
   .footer .container .contact > div {
     flex-direction: column;
